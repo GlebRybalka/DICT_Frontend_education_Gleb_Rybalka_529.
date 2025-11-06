@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="230" height="80" viewBox="0 0 230 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- D: (белый) -->
+
     <text x="0" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FFFFFF">D:</text>
 
-    <!-- Первый слеш (белый, ещё ближе) -->
     <text x="85" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FFFFFF">/</text>
 
-    <!-- Второй слеш (красный, ещё ближе) -->
     <text x="105" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FF2B2B">/</text>
 
-    <!-- CT (красный, ещё ближе) -->
     <text x="135" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" font-weight="900" fill="#FF2B2B">CT</text>
 
 </svg>
