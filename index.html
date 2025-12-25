@@ -1,20 +1,395 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage | Department of Information and
-        Communication Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Department of Information and Communication Technologies</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        header {
+            background: #141414;
+            padding: 10px 40px;
+            border-bottom: 1px solid #222;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo svg {
+            height: 60px;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-nav a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .search-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: white;
+            font-size: 14px;
+        }
+        .lang-switch .flag {
+            width: 24px;
+            height: 16px;
+            background: linear-gradient(#0076ff 50%, rgb(255, 221, 0) 50%);
+            border: 1px solid #222;
+            border-radius: 3px;
+        }
+        .lang-switch a {
+            color: #cccccc;
+            text-decoration: none;
+        }
+        .lang-switch a.active {
+            color: white;
+        }
+        .divider {
+            color: #555;
+        }
+        main {
+            padding: 40px;
+            color: #111;
+        }
+        footer {
+            background: #141414;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Вітаємо на сайті кафедри Інформаційних і
-    коммунікаційних технологій ім. О.О.Зеленського!</h1>
-<p>Це перший тестовий варіант нашого навчального
-    проекту.</p>
-<img src="images/logo.svg" alt="Логотип кафедри">
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            <svg width="230" height="80" viewBox="0 0 230 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FFFFFF">D:</text>
+                <text x="85" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FFFFFF">/</text>
+                <text x="105" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" fill="#FF2B2B">/</text>
+                <text x="135" y="60" font-family="Arial Black, Arial, sans-serif" font-size="60" font-weight="900" fill="#FF2B2B">CT</text>
+            </svg>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#specialties">СПЕЦІАЛЬНОСТІ</a></li>
+                <li><a href="#science">НАУКА</a></li>
+                <li><a href="#news">НОВИНИ</a></li>
+                <li><a href="#contact">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <button class="search-btn">🔍</button>
+            <div class="lang-switch">
+                <span class="flag"></span>
+                <a href="#" class="active">UA</a>
+                <span class="divider">|</span>
+                <a href="#">EN</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Створюй майбутнє. Тут і зараз!</h1>
+            <p>Вибери не просто освіту — обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають реальністю.</p>
+            <a href="#specialties" class="hero-btn">Дізнатися більше</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/logo.banner.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <h1>Вітаємо на сайті кафедри Інформаційних і коммунікаційних технологій ім. О.О.Зеленського!</h1>
+        <p>Це перший тестовий варіант нашого навчального проекту.</p>
+        <img src="images/logo.svg" alt="Логотип кафедри">
+    </section>
+
+    <section>
+        <h1>Створюй майбутнє. Тут і зараз!</h1>
+        <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+    </section>
+
+
+    <section id="specialties" class="specialties">
+        <h2>Наші спеціальності</h2>
+
+        <p>
+            Ми спеціалізуємось на підготовці фахівців в області мережевих,
+            програмних та інформаційних технологій за двома напрямками
+            172 — Електронні комунікації та радіотехніка і
+            126 — Інформаційні системи та технології.
+        </p>
+
+        <div class="specialties-image">
+            <img src="images/specialties.png" alt="Наші спеціальності 126 та 172">
+        </div>
+    </section>
+
+
+
+    <section class="numbers">
+        <div class="numbers-inner">
+
+            <div class="number-item">
+                <div class="number-value">18</div>
+                <div class="number-text">Досвідчених<br>викладачів</div>
+            </div>
+
+            <div class="number-item">
+                <div class="number-value">65</div>
+                <div class="number-text">Навчальних<br>дисциплін</div>
+            </div>
+
+            <div class="number-item">
+                <div class="number-value">1200+</div>
+                <div class="number-text">Талановитих<br>випускників</div>
+            </div>
+
+            <div class="number-item">
+                <div class="number-value">∞</div>
+                <div class="number-text">Унікального<br>досвіду</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="science" class="science">
+        <div class="science-inner">
+
+            <div class="science-visuals">
+                <div class="card wide"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <div class="science-content">
+                <h2>Наука та інновації</h2>
+                <h3>Від аудиторії — до реального проєкту</h3>
+                <p>
+                    Наші студенти не просто вивчають теорію — вони беруть участь
+                    у реальних проєктах, розробляють IT-рішення, створюють стартапи
+                    та співпрацюють з компаніями-партнерами.
+                </p>
+                <a href="#" class="science-btn">ДІЗНАТИСЬ БІЛЬШЕ</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="experience">
+        <div class="experience-header">
+            <h2>#DICT<span>Experience</span></h2>
+
+            <div class="experience-arrows">
+                <button>‹</button>
+                <button>›</button>
+            </div>
+        </div>
+
+        <div class="experience-cards">
+
+            <div class="experience-card">
+                <p>“Office ipsum you must be muted. Meet t-shaped finish sexy lost info company donuts spaces knowledge. Pale follow data best done.”</p>
+                <div class="author">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>Firstname Lastname</strong><br>
+                        <span>Position title, Company name</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <p>“Office ipsum you must be muted. Marginalized closest shoot launch less those power high.”</p>
+                <div class="author">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>Firstname Lastname</strong><br>
+                        <span>Position title, Company name</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <p>“Office ipsum you must be muted. Meet t-shaped finish sexy lost info company donuts spaces knowledge.”</p>
+                <div class="author">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>Firstname Lastname</strong><br>
+                        <span>Position title, Company name</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <p>“Office ipsum you must be muted. Office ipsum you must be muted.”</p>
+                <div class="author">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>Firstname Lastname</strong><br>
+                        <span>Position title, Company name</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <h2>Нам довіряють</h2>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <img src="images/contacts-bg.png" alt="Контакти кафедри" class="contact-image">
+
+        <h2>Контакти</h2>
+        <p>61070, Харків, вул. Вадима Манька, 17</p>
+        <p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
+        <p>Кафедра інформаційно-комунікаційних технологій No504</p>
+        <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+        <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+    </section>
+
+
+    <section id="news" class="news">
+        <div class="news-header">
+            <h2>Новини</h2>
+
+            <div class="news-arrows">
+                <button>‹</button>
+                <button>›</button>
+            </div>
+        </div>
+
+        <div class="news-cards">
+
+            <article class="news-card">
+                <img src="images/news1.jpg" alt="">
+                <div class="news-content">
+                    <h3>Office ipsum you must be muted.</h3>
+                    <p>Meet t-shaped finish sexy last info. Malik offers a comprehensive understanding of the issue…</p>
+                    <span class="news-date">07 Jan 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="images/news2.jpg" alt="">
+                <div class="news-content">
+                    <h3>Office ipsum you must be muted.</h3>
+                    <p>Meet t-shaped finish sexy lost info company donuts spaces knowledge…</p>
+                    <span class="news-date">07 Jan 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="images/news3.jpg" alt="">
+                <div class="news-content">
+                    <h3>Office ipsum you must be muted.</h3>
+                    <p>Meet t-shaped finish sexy lost info company donuts spaces knowledge…</p>
+                    <span class="news-date">07 Jan 2025</span>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="images/news4.jpg" alt="">
+                <div class="news-content">
+                    <h3>Office ipsum you must be muted.</h3>
+                    <p>Meet t-shaped finish sexy last info. Malik offers a comprehensive understanding…</p>
+                    <span class="news-date">07 Jan 2025</span>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="news-footer">
+            <a href="#" class="news-btn">БІЛЬШЕ НОВИН</a>
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+
+        <div class="footer-left">
+            <p>61070, Харків, вул. Вадима Манька, 17</p>
+            <p>НАУ ім. М.Є. Жуковського «ХАІ»</p>
+            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-logo">D://<span>ICT</span></div>
+            <p>© 2025 All right reserved</p>
+
+            <div class="footer-socials">
+                <a href="#">🔵</a>
+                <a href="#">🟣</a>
+                <a href="#">📘</a>
+                <a href="#">💼</a>
+                <a href="#">📸</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p>📞 (057) 788-43-52</p>
+            <p>📞 +38 (099) 502-57-75</p>
+            <p>✉ <a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+        </div>
+
+    </div>
+</footer>
+
+
 <script src="js/main.js"></script>
+
 </body>
 </html>

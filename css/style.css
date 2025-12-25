@@ -6,3 +6,400 @@ body {
     margin: 50px auto;
     padding: 20px;
 }
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #ff2b2b;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero-btn:hover {
+    background: #d82020;
+}
+
+.hero-image img {
+    width: 480px;
+}
+
+
+.specialties {
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.specialties p {
+    max-width: 900px;
+    margin: 20px auto 50px;
+    color: #bfbfbf;
+    font-size: 16px;
+}
+
+.specialties-image img {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+
+.numbers {
+    background: #141414;
+    padding: 60px 40px;
+    margin-top: 40px;
+}
+
+.numbers-inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.number-item {
+    flex: 1;
+    position: relative;
+}
+
+.number-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 60%;
+    width: 1px;
+    background: #333;
+}
+
+.number-value {
+    font-size: 64px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.number-text {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+
+
+/* ===== #DICTExperience ===== */
+.experience {
+    background: #141414;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.experience-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.experience-header span {
+    color: #ff2b2b;
+}
+
+.experience-arrows button {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.experience-cards {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: #1f1f1f;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.experience-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background: #555;
+    border-radius: 50%;
+}
+
+.author strong {
+    color: #fff;
+    font-size: 14px;
+}
+
+.author span {
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+/* ===== Наука та інновації ===== */
+.science {
+    background: #141414;
+    padding: 80px 40px;
+    color: #fff;
+}
+
+.science-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.science-visuals {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 20px;
+}
+
+.science-visuals .wide {
+    grid-column: span 2;
+}
+
+.card {
+    background: #1f1f1f;
+    border-radius: 12px;
+}
+
+.science-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.science-content h3 {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.science-content p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.science-btn {
+    display: inline-block;
+    background: #ff2b2b;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+
+.contact-section {
+    background: #141414;
+    color: #ccc;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+
+.news {
+    background: #141414;
+    padding: 80px 40px;
+    color: #fff;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.news-header h2 {
+    font-size: 32px;
+}
+
+.news-arrows button {
+    background: #1f1f1f;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.news-card {
+    background: #1b1b1b;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform .3s;
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.news-date {
+    font-size: 12px;
+    color: #666
+}
+
+.footer {
+    background: #141414;
+    color: #aaa;
+    padding: 50px 40px;
+    border-top: 1px solid #222;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-left,
+.footer-right {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-logo span {
+    color: #ff2b2b;
+}
+
+.footer-socials {
+    margin-top: 15px;
+}
+
+.footer-socials a {
+    margin: 0 6px;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-socials a:hover {
+    opacity: 1;
+}
+
+.footer-right a {
+    color: #ff2b2b;
+    text-decoration: none;
+}
